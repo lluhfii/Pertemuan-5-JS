@@ -1,0 +1,36 @@
+<HTML>
+    <HEAD><TITLE>Mandiri_5</TITLE></HEAD>
+    <BODY>
+    <SCRIPT language="JavaScript">
+        function cek()
+        {
+            var bil = parseFloat(document.formku.bilangan.value);
+            var jenis = " ";
+    
+            if(isNaN(bil))
+            {
+                alert("Anda Belum memasukkan Bilangan");
+            }
+            else
+            {
+            if (bil % 2 == 0)
+            {
+                jenis = " Adalah Genap";
+            }
+            else
+            {
+                jenis = " Adalah Ganjil";
+            }
+    
+                alert(bil+" "+jenis);
+            }
+        }
+    </SCRIPT>
+    <FORM NAME="formku">
+    <H2><BR>Masukkan bilangan yang anda inginkan ???</H2>
+    Masukkan Bilangan : <input type="text" size="11" name="bilangan">
+    <INPUT TYPE="button" value="Tanya" onclick="cek()">
+    <INPUT TYPE="reset" value="Ulang">
+    </FORM>
+    </BODY>
+    </HTML>
